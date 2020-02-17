@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Card Match Input</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="card">
+      <div class="front card--side">
+        <img id="image" src="card.jpg" />
+      </div>
+      <div class="back card--side"></div>
+    </div>
+    <main>
+      <section id="input-box">
+        <form id="form">
+          <label id="input-label" for="input">
+            Enter your name by matching the cards below
+          </label>
+          <input type="text" id="input" tabindex="-1" />
+          <input type="button" id="button" value="delete" />
+        </form>
+      </section>
+      <section id="container"></section>
+    </main>
+    <script src="index.js" type="text/javascript"></script>
+  </body>
+</html>
