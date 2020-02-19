@@ -95,7 +95,7 @@ html {
 
 #input-box {
   width: 100%;
-  height: 10rem;
+  /* height: 10rem; */
   padding: 2rem;
 }
 
@@ -111,7 +111,7 @@ html {
   }
 
   #input-box {
-    height: 15rem;
+    /* height: 15rem; */
   }
 }
 
