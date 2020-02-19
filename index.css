@@ -39,6 +39,12 @@ html {
   width: 15rem;
 }
 
+@media (max-width: 56.25em) {
+  #button {
+    font-size: 3rem;
+  }
+}
+
 #menu {
   position: absolute;
   height: 15rem;
@@ -66,8 +72,13 @@ html {
   height: 10rem;
   width: 7.2rem;
   margin: 1rem;
+  cursor: pointer;
   perspective: 150rem;
   -moz-perspective: 150rem;
+}
+
+.card:active {
+  transform: scale(0.95);
 }
 
 .card--side {
