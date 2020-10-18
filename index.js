@@ -3,11 +3,11 @@ const card = document.querySelector('.card');
 const container = document.getElementById('container');
 const input = document.getElementById('input');
 
-input.addEventListener('mousedown', function(e) {
+input.addEventListener('mousedown', function (e) {
   e.preventDefault();
 });
 
-button.addEventListener('click', function() {
+button.addEventListener('click', function () {
   input.value = input.value.slice(0, input.value.length - 1);
 });
 
@@ -28,6 +28,7 @@ const createCards = () => {
     cards.push(node);
     node = node.cloneNode('deep');
     node.addEventListener('click', clickCard);
+    node.removeAttribute('hidden');
     cards.push(node);
     i++;
   }
