@@ -25,7 +25,9 @@ const createCards = () => {
   while (i <= 90) {
     node = createCard(String.fromCharCode(i));
     node.addEventListener('click', clickCard);
+    node.removeAttribute('hidden');
     cards.push(node);
+
     node = node.cloneNode('deep');
     node.addEventListener('click', clickCard);
     node.removeAttribute('hidden');
@@ -83,4 +85,3 @@ const clickCard = event => {
 };
 
 createCards();
-document.body.removeChild(document.body.firstElementChild);
